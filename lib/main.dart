@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:responsive_dash_board/cubit/cubit.dart';
 import 'package:responsive_dash_board/views/dash_board_view.dart';
 
 void main() {
@@ -10,9 +12,12 @@ class ResponsiveDashBoard extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
-      debugShowCheckedModeBanner: false,
-      home: DashBoardView(),
+    return BlocProvider(
+      create: (context) => AppCubit(),
+      child: const MaterialApp(
+        debugShowCheckedModeBanner: false,
+        home: DashBoardView(),
+      ),
     );
   }
 }

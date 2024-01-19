@@ -33,6 +33,10 @@ class Assets {
   /// assets/images/income.svg
   static const String imagesIncome = "assets/images/income.svg";
 
+  /// Assets for imagesLogout
+  /// assets/images/logout.svg
+  static const String imagesLogout = "assets/images/logout.svg";
+
   /// Assets for imagesMyInvestments
   /// assets/images/My_Investments.svg
   static const String imagesMyInvestments = "assets/images/My_Investments.svg";
