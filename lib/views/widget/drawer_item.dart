@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
-import 'package:responsive_dash_board/model/drawer_item_model.dart';
-import 'package:responsive_dash_board/utils/app_styles.dart';
+import '../../model/drawer_item_model.dart';
+import '../../utils/app_styles.dart';
 
 class UnSelectedDraweItem extends StatelessWidget {
   const UnSelectedDraweItem({super.key, required this.drawerItemModel});

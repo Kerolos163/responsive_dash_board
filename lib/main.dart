@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:responsive_dash_board/cubit/cubit.dart';
-import 'package:responsive_dash_board/views/dash_board_view.dart';
+import 'cubit/cubit.dart';
+import 'views/dash_board_view.dart';
 
 void main() {
   runApp(const ResponsiveDashBoard());

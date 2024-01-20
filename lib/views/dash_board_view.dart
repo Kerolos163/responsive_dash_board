@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:responsive_dash_board/utils/app_color.dart';
-import 'package:responsive_dash_board/views/widget/layouts/adaptive_layout_widget.dart';
-import 'package:responsive_dash_board/views/widget/layouts/desktop_layout.dart';
+import '../utils/app_color.dart';
+import 'widget/layouts/adaptive_layout_widget.dart';
+import 'widget/layouts/desktop_layout.dart';
 
 class DashBoardView extends StatelessWidget {
   const DashBoardView({super.key});

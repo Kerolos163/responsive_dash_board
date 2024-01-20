@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:responsive_dash_board/cubit/cubit.dart';
-import 'package:responsive_dash_board/cubit/state.dart';
-import 'package:responsive_dash_board/model/drawer_item_model.dart';
-import 'package:responsive_dash_board/utils/app_image.dart';
-import 'package:responsive_dash_board/views/widget/drawer_item.dart';
+import '../../cubit/cubit.dart';
+import '../../cubit/state.dart';
+import '../../model/drawer_item_model.dart';
+import '../../utils/app_image.dart';
+import 'drawer_item.dart';
 
 class ListViewDrawerWadget extends StatelessWidget {
   const ListViewDrawerWadget({super.key});

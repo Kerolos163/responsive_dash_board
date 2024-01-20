@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:responsive_dash_board/views/widget/allexpensess_row.dart';
+import 'allexpensess_row.dart';
 
 class AllExpensess extends StatelessWidget {
   const AllExpensess({super.key});

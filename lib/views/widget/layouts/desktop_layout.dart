@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:responsive_dash_board/views/widget/all_expensess.dart';
-import 'package:responsive_dash_board/views/widget/custom_drawer.dart';
+import '../all_expensess.dart';
+import '../custom_drawer.dart';
 
 class DesktopLayout extends StatelessWidget {
   const DesktopLayout({super.key});
