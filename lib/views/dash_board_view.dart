@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:responsive_dash_board/utils/app_color.dart';
 import 'package:responsive_dash_board/views/widget/layouts/adaptive_layout_widget.dart';
 import 'package:responsive_dash_board/views/widget/layouts/desktop_layout.dart';
 
@@ -8,7 +9,7 @@ class DashBoardView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: const Color(0xFFF7F9FA),
+      backgroundColor: AppColor.lightGrey3,
       body: AdaptiveLayout(
         mobileLayout: (context) => const SizedBox(),
         tabletLayout: (context) => const SizedBox(),

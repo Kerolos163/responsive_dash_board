@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:responsive_dash_board/utils/app_styles.dart';
+import 'package:responsive_dash_board/views/widget/allexpensess_row.dart';
 
 class AllExpensess extends StatelessWidget {
   const AllExpensess({super.key});
@@ -20,23 +20,6 @@ class AllExpensess extends StatelessWidget {
           ],
         ),
       ),
-    );
-  }
-}
-
-class AllExpensessRow extends StatelessWidget {
-  const AllExpensessRow({super.key});
-
-  @override
-  Widget build(BuildContext context) {
-    return Row(
-      mainAxisAlignment: MainAxisAlignment.spaceBetween,
-      children: [
-        Text(
-          "All Expenses",
-          style: AppStyles.styleSemiBold20,
-        )
-      ],
     );
   }
 }

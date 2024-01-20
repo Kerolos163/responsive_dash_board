@@ -15,7 +15,7 @@ class ContainerInfo extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Card(
-      color: AppColor.lightKrey,
+      color: AppColor.lightGrey,
       shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),
       elevation: 0,
       child: ListTile(
