@@ -20,14 +20,6 @@ class AllExpensess extends StatelessWidget {
             AllExpensessRow(),
             SizedBox(height: 16),
             AllExpensessItemListView()
-            // AllExpensessItem(
-            //   allExpensessItemModel: AllExpensessItemModel(
-            //     img: Assets.imagesIncome,
-            //     title: "Income",
-            //     date: "April 2022",
-            //     price: "\$20,129",
-            //   ),
-            // )
           ],
         ),
       ),

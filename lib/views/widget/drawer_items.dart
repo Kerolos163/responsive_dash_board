@@ -23,7 +23,7 @@ class ListViewDrawerWadget extends StatelessWidget {
           itemBuilder: (context, index) => GestureDetector(
             onTap: () {
               AppCubit.get(context)
-                  .changeSelectedItem(newItem: items[index].txt);
+                  .changeSelectedDrawerItem(newItem: items[index].txt);
             },
             child: Padding(
               padding: const EdgeInsets.only(top: 20),
@@ -42,7 +42,7 @@ class ListViewDrawerWadget extends StatelessWidget {
   }
 
   StatelessWidget selectItemMethod(BuildContext context, int index) {
-    return AppCubit.get(context).selectedItem == items[index].txt
+    return AppCubit.get(context).selectedDrawerItem == items[index].txt
         ? SelectedItem(drawerItemModel: items[index])
         : UnSelectedDraweItem(drawerItemModel: items[index]);
   }
