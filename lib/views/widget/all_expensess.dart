@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:responsive_dash_board/views/widget/all_expensess_item_listview.dart';
 import 'allexpensess_row.dart';
 
 class AllExpensess extends StatelessWidget {
@@ -17,6 +18,16 @@ class AllExpensess extends StatelessWidget {
         child: const Column(
           children: [
             AllExpensessRow(),
+            SizedBox(height: 16),
+            AllExpensessItemListView()
+            // AllExpensessItem(
+            //   allExpensessItemModel: AllExpensessItemModel(
+            //     img: Assets.imagesIncome,
+            //     title: "Income",
+            //     date: "April 2022",
+            //     price: "\$20,129",
+            //   ),
+            // )
           ],
         ),
       ),
