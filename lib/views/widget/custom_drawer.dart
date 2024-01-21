@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:responsive_dash_board/model/container_info_model.dart';
+import '../../model/container_info_model.dart';
 import '../../model/drawer_item_model.dart';
 import '../../utils/app_image.dart';
 import 'container_info.dart';

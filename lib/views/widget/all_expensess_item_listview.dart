@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:responsive_dash_board/cubit/cubit.dart';
-import 'package:responsive_dash_board/cubit/state.dart';
-import 'package:responsive_dash_board/model/allexpensess_item_model.dart';
-import 'package:responsive_dash_board/utils/app_image.dart';
-import 'package:responsive_dash_board/views/widget/allexpensess_item.dart';
+import '../../cubit/cubit.dart';
+import '../../cubit/state.dart';
+import '../../model/allexpensess_item_model.dart';
+import '../../utils/app_image.dart';
+import 'allexpensess_item.dart';
 
 class AllExpensessItemListView extends StatelessWidget {
   const AllExpensessItemListView({super.key});

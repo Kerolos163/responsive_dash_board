@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
-import 'package:responsive_dash_board/model/container_info_model.dart';
 
+import '../../model/container_info_model.dart';
 import '../../utils/app_color.dart';
 import '../../utils/app_styles.dart';
 

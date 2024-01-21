@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:responsive_dash_board/views/widget/custom_background_container.dart';
-import 'package:responsive_dash_board/views/widget/latest_transaction_widget.dart';
-import 'package:responsive_dash_board/views/widget/quick_invoice_header.dart';
+import 'custom_background_container.dart';
+import 'latest_transaction_widget.dart';
+import 'quick_invoice_header.dart';
 
 class QuickInvoice extends StatelessWidget {
   const QuickInvoice({super.key});

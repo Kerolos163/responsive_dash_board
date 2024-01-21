@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+
 import '../../utils/app_styles.dart';
 import 'duration_container.dart';
 

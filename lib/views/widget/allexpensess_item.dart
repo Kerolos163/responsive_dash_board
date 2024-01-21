@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
-import 'package:responsive_dash_board/model/allexpensess_item_model.dart';
-import 'package:responsive_dash_board/utils/app_color.dart';
-import 'package:responsive_dash_board/utils/app_image.dart';
-import 'package:responsive_dash_board/utils/app_styles.dart';
+import '../../model/allexpensess_item_model.dart';
+import '../../utils/app_color.dart';
+import '../../utils/app_image.dart';
+import '../../utils/app_styles.dart';
 
 class AllExpensessItem extends StatelessWidget {
   const AllExpensessItem(

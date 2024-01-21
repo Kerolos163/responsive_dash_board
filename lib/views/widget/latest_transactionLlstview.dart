@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:responsive_dash_board/model/container_info_model.dart';
-import 'package:responsive_dash_board/utils/app_image.dart';
-import 'package:responsive_dash_board/views/widget/container_info.dart';
+
+import '../../model/container_info_model.dart';
+import '../../utils/app_image.dart';
+import 'container_info.dart';
 
 class LatestTransactionListView extends StatelessWidget {
   const LatestTransactionListView({super.key});
