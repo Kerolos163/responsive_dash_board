@@ -75,7 +75,12 @@ class AllExpensessItem extends StatelessWidget {
         ),
         Transform.rotate(
           angle: -1.571,
-          child: SvgPicture.asset(Assets.imagesArrowDown),
+          child: SvgPicture.asset(
+            Assets.imagesArrowDown,
+            colorFilter: isSelected
+                ? const ColorFilter.mode(AppColor.white, BlendMode.srcIn)
+                : null,
+          ),
         )
       ],
     );

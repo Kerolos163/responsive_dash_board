@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:responsive_dash_board/model/container_info_model.dart';
 import '../../model/drawer_item_model.dart';
 import '../../utils/app_image.dart';
 import 'container_info.dart';
@@ -16,9 +17,11 @@ class CustomDrawer extends StatelessWidget {
         slivers: [
           SliverToBoxAdapter(
             child: ContainerInfo(
-              img: Assets.imagesAvatar3,
-              title: "Lekan Okeowo",
-              subTitle: "demo@gmail.com",
+              model: ContainerInfoModel(
+                img: Assets.imagesAvatar3,
+                title: "Lekan Okeowo",
+                subTitle: "demo@gmail.com",
+              ),
             ),
           ),
           ListViewDrawerWadget(),

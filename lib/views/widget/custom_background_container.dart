@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-class CustomBackgroubdContainer extends StatelessWidget {
-  const CustomBackgroubdContainer(
+class CustomBackgroundContainer extends StatelessWidget {
+  const CustomBackgroundContainer(
       {super.key, required this.child, this.padding});
   final Widget child;
   final double? padding;
