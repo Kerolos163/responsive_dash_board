@@ -17,13 +17,15 @@ class DesktopLayout extends StatelessWidget {
         ),
         Expanded(
           flex: 2,
-          child: Column(
-            children: [
-              SizedBox(height: 20),
-              AllExpensess(),
-              SizedBox(height: 24),
-              QuickInvoice()
-            ],
+          child: SingleChildScrollView(
+            child: Column(
+              children: [
+                SizedBox(height: 20),
+                AllExpensess(),
+                SizedBox(height: 24),
+                QuickInvoice()
+              ],
+            ),
           ),
         )
       ],
