@@ -29,11 +29,13 @@ class LatestTransactionListView extends StatelessWidget {
       scrollDirection: Axis.horizontal,
       child: Row(
         children: items
-            .map((item) => IntrinsicWidth(
-                  child: ContainerInfo(
-                    model: item,
-                  ),
-                ))
+            .map(
+              (item) => IntrinsicWidth(
+                child: ContainerInfo(
+                  model: item,
+                ),
+              ),
+            )
             .toList(),
       ),
     );
