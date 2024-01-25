@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:responsive_dash_board/utils/app_styles.dart';
-import 'package:responsive_dash_board/views/widget/custom_textfield.dart';
+
+import '../../utils/app_styles.dart';
+import 'custom_textfield.dart';
 
 class TitleCustomTextField extends StatelessWidget {
   const TitleCustomTextField(
