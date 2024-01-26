@@ -20,4 +20,10 @@ class AppCubit extends Cubit<AppState> {
     log(selectedAllExpensessItem);
     emit(ChangeSelectedItem());
   }
+
+  int currentPageView = 0;
+  changeCurrentPageView({required int newPageView}) {
+    currentPageView = newPageView;
+    emit(ChangeSelectedPageView());
+  }
 }
