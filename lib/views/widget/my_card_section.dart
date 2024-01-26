@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:responsive_dash_board/cubit/cubit.dart';
-import 'package:responsive_dash_board/cubit/state.dart';
-import 'package:responsive_dash_board/utils/app_color.dart';
-import 'package:responsive_dash_board/utils/app_styles.dart';
-import 'package:responsive_dash_board/views/widget/cutom_dots_indecator.dart';
-import 'package:responsive_dash_board/views/widget/my_card_page_view.dart';
+import '../../cubit/cubit.dart';
+import '../../cubit/state.dart';
+import '../../utils/app_color.dart';
+import '../../utils/app_styles.dart';
+import 'cutom_dots_indecator.dart';
+import 'my_card_page_view.dart';
 
 class MyCardSection extends StatelessWidget {
   const MyCardSection({super.key});

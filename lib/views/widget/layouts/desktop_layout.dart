@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:responsive_dash_board/views/widget/allexpensess_and_quick_in_voice.dart';
 
-import 'package:responsive_dash_board/views/widget/my_card_section.dart';
+import '../allexpensess_and_quick_in_voice.dart';
 import '../custom_drawer.dart';
+import '../my_card_section.dart';
 
 class DesktopLayout extends StatelessWidget {
   const DesktopLayout({super.key});
