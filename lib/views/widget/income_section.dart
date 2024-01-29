@@ -3,6 +3,7 @@ import 'package:responsive_dash_board/utils/app_styles.dart';
 import 'package:responsive_dash_board/views/widget/custom_background_container.dart';
 import 'package:responsive_dash_board/views/widget/duration_container.dart';
 import 'package:responsive_dash_board/views/widget/inchome_chart.dart';
+import 'package:responsive_dash_board/views/widget/income_details.dart';
 
 class IncomeSection extends StatelessWidget {
   const IncomeSection({super.key});
@@ -13,11 +14,12 @@ class IncomeSection extends StatelessWidget {
       child: Column(
         children: [
           incomeSectionHeader(),
-          const SizedBox(
-            height: 300,
+          const AspectRatio(
+           aspectRatio: 1,
             child: Row(
               children: [
                 Expanded(child: IncomeChartWidget()),
+                Expanded(child: IncomeDetails()),
               ],
             ),
           )
