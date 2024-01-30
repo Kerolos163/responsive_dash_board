@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:responsive_dash_board/utils/app_styles.dart';
-import 'package:responsive_dash_board/views/widget/custom_background_container.dart';
-import 'package:responsive_dash_board/views/widget/duration_container.dart';
-import 'package:responsive_dash_board/views/widget/inchome_chart.dart';
-import 'package:responsive_dash_board/views/widget/income_details.dart';
+import '../../utils/app_styles.dart';
+import 'custom_background_container.dart';
+import 'duration_container.dart';
+import 'inchome_chart.dart';
+import 'income_details.dart';
 
 class IncomeSection extends StatelessWidget {
   const IncomeSection({super.key});
@@ -15,7 +15,7 @@ class IncomeSection extends StatelessWidget {
         children: [
           incomeSectionHeader(),
           const AspectRatio(
-           aspectRatio: 1,
+            aspectRatio: 1,
             child: Row(
               children: [
                 Expanded(child: IncomeChartWidget()),

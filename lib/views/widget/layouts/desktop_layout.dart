@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:responsive_dash_board/views/widget/my_card_income_sections.dart';
+import '../my_card_income_sections.dart';
 
 import '../allexpensess_and_quick_in_voice.dart';
 import '../custom_drawer.dart';

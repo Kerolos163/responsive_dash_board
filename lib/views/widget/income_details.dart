@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:responsive_dash_board/model/income_item_model.dart';
-import 'package:responsive_dash_board/utils/app_color.dart';
-import 'package:responsive_dash_board/views/widget/income_details_item.dart';
+import '../../model/income_item_model.dart';
+import '../../utils/app_color.dart';
+import 'income_details_item.dart';
 
 class IncomeDetails extends StatelessWidget {
   const IncomeDetails({super.key});

@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:responsive_dash_board/model/income_item_model.dart';
-import 'package:responsive_dash_board/utils/app_color.dart';
-import 'package:responsive_dash_board/utils/app_styles.dart';
+import '../../model/income_item_model.dart';
+import '../../utils/app_color.dart';
+import '../../utils/app_styles.dart';
 
 class IncomeDetailsItem extends StatelessWidget {
   final IncomeItemModel incomeItemModel;

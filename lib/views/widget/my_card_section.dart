@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:responsive_dash_board/views/widget/custom_background_container.dart';
-import 'package:responsive_dash_board/views/widget/transaction_history.dart';
+import 'custom_background_container.dart';
+import 'transaction_history.dart';
 import '../../cubit/cubit.dart';
 import '../../cubit/state.dart';
 import '../../utils/app_styles.dart';

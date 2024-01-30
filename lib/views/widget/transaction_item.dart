@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:responsive_dash_board/model/transaction_model.dart';
-import 'package:responsive_dash_board/utils/app_color.dart';
-import 'package:responsive_dash_board/utils/app_styles.dart';
+import '../../model/transaction_model.dart';
+import '../../utils/app_color.dart';
+import '../../utils/app_styles.dart';
 
 class TransactionItem extends StatelessWidget {
   const TransactionItem({super.key, required this.model});
