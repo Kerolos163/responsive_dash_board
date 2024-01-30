@@ -1,13 +1,11 @@
-import 'dart:developer';
-
 import 'package:flutter/material.dart';
-import 'package:responsive_dash_board/views/widget/custom_drawer.dart';
-import 'package:responsive_dash_board/views/widget/layouts/mobile_layout.dart';
-import 'package:responsive_dash_board/views/widget/layouts/tablet_layout_widget.dart';
 
 import '../utils/app_color.dart';
+import 'widget/custom_drawer.dart';
 import 'widget/layouts/adaptive_layout_widget.dart';
 import 'widget/layouts/desktop_layout.dart';
+import 'widget/layouts/mobile_layout.dart';
+import 'widget/layouts/tablet_layout_widget.dart';
 
 class DashBoardView extends StatefulWidget {
   const DashBoardView({super.key});

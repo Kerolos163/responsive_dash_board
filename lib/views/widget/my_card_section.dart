@@ -1,12 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'custom_background_container.dart';
-import 'transaction_history.dart';
+
 import '../../cubit/cubit.dart';
 import '../../cubit/state.dart';
 import '../../utils/app_styles.dart';
+import 'custom_background_container.dart';
 import 'cutom_dots_indecator.dart';
 import 'my_card_page_view.dart';
+import 'transaction_history.dart';
 
 class MyCardSection extends StatelessWidget {
   const MyCardSection({super.key});

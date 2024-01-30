@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+
 import '../../utils/app_styles.dart';
 import 'custom_background_container.dart';
 import 'duration_container.dart';
