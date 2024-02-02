@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:responsive_dash_board/utils/size_config.dart';
-import 'package:responsive_dash_board/views/widget/details_income_chart.dart';
-import 'package:responsive_dash_board/views/widget/inchome_chart.dart';
+import '../../utils/size_config.dart';
+import 'details_income_chart.dart';
+import 'inchome_chart.dart';
 
 import 'income_details.dart';
 

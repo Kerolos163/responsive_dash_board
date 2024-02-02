@@ -1,6 +1,6 @@
 import 'package:fl_chart/fl_chart.dart';
 import 'package:flutter/material.dart';
-import 'package:responsive_dash_board/utils/app_styles.dart';
+import '../../utils/app_styles.dart';
 
 import '../../utils/app_color.dart';
 
@@ -37,7 +37,7 @@ class _DetailsIncomeChartWidgetState extends State<DetailsIncomeChartWidget> {
           radius: activeIndex == 0 ? 60 : 50,
           titleStyle: AppStyles.styleMedium16(context).copyWith(
             color: activeIndex == 0 ? AppColor.titleColor : AppColor.white,
-            fontSize: activeIndex == 0 ? 10 : null,
+            fontSize: activeIndex == 0 ? 11.5 : null,
           ),
           value: 40,
           color: AppColor.colorChart1,
@@ -48,7 +48,7 @@ class _DetailsIncomeChartWidgetState extends State<DetailsIncomeChartWidget> {
           radius: activeIndex == 1 ? 60 : 50,
           titleStyle: AppStyles.styleMedium16(context).copyWith(
             color: activeIndex == 1 ? AppColor.titleColor : AppColor.white,
-            fontSize: activeIndex == 1 ? 10 : null,
+            fontSize: activeIndex == 1 ? 11.5 : null,
           ),
           value: 25,
           color: AppColor.primary,
@@ -59,7 +59,7 @@ class _DetailsIncomeChartWidgetState extends State<DetailsIncomeChartWidget> {
           radius: activeIndex == 2 ? 60 : 50,
           titleStyle: AppStyles.styleMedium16(context).copyWith(
             color: activeIndex == 2 ? AppColor.titleColor : AppColor.white,
-            fontSize: activeIndex == 2 ? 10 : null,
+            fontSize: activeIndex == 2 ? 11.5 : null,
           ),
           value: 20,
           color: AppColor.titleColor,
@@ -70,7 +70,7 @@ class _DetailsIncomeChartWidgetState extends State<DetailsIncomeChartWidget> {
           radius: activeIndex == 3 ? 60 : 50,
           titleStyle: AppStyles.styleMedium16(context).copyWith(
             color: activeIndex == 3 ? AppColor.titleColor : AppColor.white,
-            fontSize: activeIndex == 3 ? 10 : null,
+            fontSize: activeIndex == 3 ? 11.5 : null,
           ),
           value: 40,
           color: AppColor.colorChart2,

@@ -1,11 +1,11 @@
 import 'dart:developer';
 
 import 'package:flutter/material.dart';
-import 'package:responsive_dash_board/views/widget/income_section_body.dart';
 
 import '../../utils/app_styles.dart';
 import 'custom_background_container.dart';
 import 'duration_container.dart';
+import 'income_section_body.dart';
 
 class IncomeSection extends StatelessWidget {
   const IncomeSection({super.key});
