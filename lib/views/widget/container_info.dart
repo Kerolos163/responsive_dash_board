@@ -22,11 +22,11 @@ class ContainerInfo extends StatelessWidget {
           leading: SvgPicture.asset(model.img),
           title: Text(
             model.title,
-            style: AppStyles.styleSemiBold16,
+            style: AppStyles.styleSemiBold16(context),
           ),
           subtitle: Text(
             model.subTitle,
-            style: AppStyles.styleRegular12,
+            style: AppStyles.styleRegular12(context),
           ),
         ),
       ),

@@ -16,7 +16,7 @@ class IncomeSection extends StatelessWidget {
     return CustomBackgroundContainer(
       child: Column(
         children: [
-          incomeSectionHeader(),
+          incomeSectionHeader(context),
           const AspectRatio(
             aspectRatio: 1.2,
             child: IncomeSectionBody(),
@@ -26,15 +26,15 @@ class IncomeSection extends StatelessWidget {
     );
   }
 
-  Row incomeSectionHeader() {
-    return const Row(
+  Row incomeSectionHeader(context) {
+    return Row(
       mainAxisAlignment: MainAxisAlignment.spaceBetween,
       children: [
         Text(
           "Income",
-          style: AppStyles.styleSemiBold20,
+          style: AppStyles.styleSemiBold20(context),
         ),
-        DurationContainer()
+        const DurationContainer()
       ],
     );
   }

@@ -13,7 +13,7 @@ class UnSelectedDraweItem extends StatelessWidget {
       leading: SvgPicture.asset(drawerItemModel.img),
       title: Text(
         drawerItemModel.txt,
-        style: AppStyles.styleSemiBold16.copyWith(
+        style: AppStyles.styleSemiBold16(context).copyWith(
           fontWeight: FontWeight.w700,
         ),
       ),
@@ -28,7 +28,7 @@ class SelectedItem extends StatelessWidget {
   Widget build(BuildContext context) {
     return ListTile(
       leading: SvgPicture.asset(drawerItemModel.img),
-      title: Text(drawerItemModel.txt, style: AppStyles.styleBold16),
+      title: Text(drawerItemModel.txt, style: AppStyles.styleBold16(context)),
       trailing: Container(
         width: 3.267604351043701,
         decoration: const BoxDecoration(

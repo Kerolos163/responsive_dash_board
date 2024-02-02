@@ -22,7 +22,7 @@ class MyCardSection extends StatelessWidget {
             return Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                const Text("My card", style: AppStyles.styleSemiBold20),
+                Text("My card", style: AppStyles.styleSemiBold20(context)),
                 const SizedBox(height: 20),
                 MyCardPageView(
                   onPageChanged: (value) => AppCubit.get(context)

@@ -12,10 +12,12 @@ class IncomeDetailsItem extends StatelessWidget {
   Widget build(BuildContext context) {
     return ListTile(
       leading: CircleAvatar(backgroundColor: incomeItemModel.color, radius: 6),
-      title: Text(incomeItemModel.title, style: AppStyles.styleRegular16),
+      title:
+          Text(incomeItemModel.title, style: AppStyles.styleRegular16(context)),
       trailing: Text(
         incomeItemModel.value,
-        style: AppStyles.styleMedium16.copyWith(color: AppColor.colorChart1),
+        style: AppStyles.styleMedium16(context)
+            .copyWith(color: AppColor.colorChart1),
       ),
     );
   }
