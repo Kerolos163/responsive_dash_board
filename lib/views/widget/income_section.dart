@@ -18,7 +18,7 @@ class IncomeSection extends StatelessWidget {
         children: [
           incomeSectionHeader(),
           const AspectRatio(
-            aspectRatio: 1.3,
+            aspectRatio: 1.2,
             child: IncomeSectionBody(),
           )
         ],
