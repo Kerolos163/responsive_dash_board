@@ -20,13 +20,21 @@ class ContainerInfo extends StatelessWidget {
       child: Center(
         child: ListTile(
           leading: SvgPicture.asset(model.img),
-          title: Text(
-            model.title,
-            style: AppStyles.styleSemiBold16(context),
+          title: FittedBox(
+            alignment: Alignment.centerLeft,
+            fit: BoxFit.scaleDown,
+            child: Text(
+              model.title,
+              style: AppStyles.styleSemiBold16(context),
+            ),
           ),
-          subtitle: Text(
-            model.subTitle,
-            style: AppStyles.styleRegular12(context),
+          subtitle: FittedBox(
+            alignment: Alignment.centerLeft,
+            fit: BoxFit.scaleDown,
+            child: Text(
+              model.subTitle,
+              style: AppStyles.styleRegular12(context),
+            ),
           ),
         ),
       ),
