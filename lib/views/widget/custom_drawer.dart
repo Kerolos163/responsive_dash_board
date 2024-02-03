@@ -1,3 +1,5 @@
+import 'dart:developer';
+
 import 'package:flutter/material.dart';
 
 import '../../model/container_info_model.dart';
@@ -12,10 +14,12 @@ class CustomDrawer extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    log(MediaQuery.sizeOf(context).width.toString());
     return Container(
       color: Colors.white,
       child: const CustomScrollView(
         slivers: [
+          SliverToBoxAdapter(child: SizedBox(height: 40)),
           SliverToBoxAdapter(
             child: ContainerInfo(
               model: ContainerInfoModel(

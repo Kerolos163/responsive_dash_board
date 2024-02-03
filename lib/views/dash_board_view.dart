@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import '../utils/size_config.dart';
 
 import '../utils/app_color.dart';
+import '../utils/size_config.dart';
 import 'widget/custom_drawer.dart';
 import 'widget/layouts/adaptive_layout_widget.dart';
 import 'widget/layouts/desktop_layout.dart';

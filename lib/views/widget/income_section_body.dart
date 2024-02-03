@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
+
 import '../../utils/size_config.dart';
 import 'details_income_chart.dart';
 import 'inchome_chart.dart';
-
 import 'income_details.dart';
 
 class IncomeSectionBody extends StatelessWidget {

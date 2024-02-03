@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+
 import '../../../utils/size_config.dart';
 
 class AdaptiveLayout extends StatelessWidget {

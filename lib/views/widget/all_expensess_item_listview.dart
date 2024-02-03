@@ -42,16 +42,19 @@ class AllExpensessItemListView extends StatelessWidget {
               .entries
               .map(
                 (item) => Expanded(
-                  child: GestureDetector(
-                    onTap: () {
-                      AppCubit.get(context).changeSelectedAllExpensessItem(
-                        newItem: item.value.title,
-                      );
-                    },
-                    child: AllExpensessItem(
-                      isSelected: item.value.title ==
-                          AppCubit.get(context).selectedAllExpensessItem,
-                      allExpensessItemModel: item.value,
+                  child: Padding(
+                    padding: const EdgeInsets.only(right: 4),
+                    child: GestureDetector(
+                      onTap: () {
+                        AppCubit.get(context).changeSelectedAllExpensessItem(
+                          newItem: item.value.title,
+                        );
+                      },
+                      child: AllExpensessItem(
+                        isSelected: item.value.title ==
+                            AppCubit.get(context).selectedAllExpensessItem,
+                        allExpensessItemModel: item.value,
+                      ),
                     ),
                   ),
                 ),
