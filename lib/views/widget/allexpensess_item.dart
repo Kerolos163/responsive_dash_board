@@ -20,7 +20,9 @@ class AllExpensessItem extends StatelessWidget {
       padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 16),
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(12),
-        border: Border.all(color: AppColor.lightGrey2, width: 1.5),
+        border: isSelected
+            ? null
+            : Border.all(color: AppColor.lightGrey2, width: 1.5),
         color: isSelected ? AppColor.primary : AppColor.white,
       ),
       child: Column(
@@ -30,29 +32,44 @@ class AllExpensessItem extends StatelessWidget {
           const SizedBox(
             height: 34,
           ),
-          Text(
-            allExpensessItemModel.title,
-            style: isSelected
-                ? AppStyles.styleSemiBold16(context).copyWith(color: AppColor.white)
-                : AppStyles.styleSemiBold16(context),
+          FittedBox(
+            fit: BoxFit.scaleDown,
+            alignment: Alignment.bottomLeft,
+            child: Text(
+              allExpensessItemModel.title,
+              style: isSelected
+                  ? AppStyles.styleSemiBold16(context)
+                      .copyWith(color: AppColor.white)
+                  : AppStyles.styleSemiBold16(context),
+            ),
           ),
           const SizedBox(
             height: 8,
           ),
-          Text(
-            allExpensessItemModel.date,
-            style: isSelected
-                ? AppStyles.styleRegular14(context).copyWith(color: AppColor.lightGrey)
-                : AppStyles.styleRegular14(context),
+          FittedBox(
+            fit: BoxFit.scaleDown,
+            alignment: Alignment.bottomLeft,
+            child: Text(
+              allExpensessItemModel.date,
+              style: isSelected
+                  ? AppStyles.styleRegular14(context)
+                      .copyWith(color: AppColor.lightGrey)
+                  : AppStyles.styleRegular14(context),
+            ),
           ),
           const SizedBox(
             height: 16,
           ),
-          Text(
-            allExpensessItemModel.price,
-            style: isSelected
-                ? AppStyles.styleSemiBold24(context).copyWith(color: AppColor.white)
-                : AppStyles.styleSemiBold24(context),
+          FittedBox(
+            fit: BoxFit.scaleDown,
+            alignment: Alignment.bottomLeft,
+            child: Text(
+              allExpensessItemModel.price,
+              style: isSelected
+                  ? AppStyles.styleSemiBold24(context)
+                      .copyWith(color: AppColor.white)
+                  : AppStyles.styleSemiBold24(context),
+            ),
           ),
         ],
       ),
@@ -63,15 +80,23 @@ class AllExpensessItem extends StatelessWidget {
     return Row(
       mainAxisAlignment: MainAxisAlignment.spaceBetween,
       children: [
-        CircleAvatar(
-          backgroundColor:
-              isSelected ? AppColor.white.withOpacity(.1) : AppColor.lightGrey,
-          radius: 30,
-          child: SvgPicture.asset(
-            allExpensessItemModel.img,
-            colorFilter: isSelected
-                ? const ColorFilter.mode(AppColor.white, BlendMode.srcIn)
-                : null,
+        Flexible(
+          child: ConstrainedBox(
+            constraints: const BoxConstraints(maxWidth: 60),
+            child: AspectRatio(
+              aspectRatio: 1,
+              child: CircleAvatar(
+                backgroundColor: isSelected
+                    ? AppColor.white.withOpacity(.1)
+                    : AppColor.lightGrey,
+                child: SvgPicture.asset(
+                  allExpensessItemModel.img,
+                  colorFilter: isSelected
+                      ? const ColorFilter.mode(AppColor.white, BlendMode.srcIn)
+                      : null,
+                ),
+              ),
+            ),
           ),
         ),
         Transform.rotate(
